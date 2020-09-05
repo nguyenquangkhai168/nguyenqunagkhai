@@ -1,0 +1,42 @@
+<div class="col-md-12 ">
+    <h2  class="text-center">Đăng Ký Tài Khoản</h2>
+    <form style="margin-top:50px; margin-bottom:10px; border-radius: 5px;" >
+        <div class="div-form-group">
+            <label for="exampleInputEmail">Tên</label>
+            <input style="box-shadow:0px 0px 15px #D8D8D8;" type="text" class="form-control" ng-model="username" placeholder="Username" id="" required>
+        </div>
+        <div class="div-form-group">
+            <label for="">Họ Và Tên</label>
+            <input style="box-shadow:0px 0px 15px #D8D8D8;"  type="text" class="form-control" ng-model="fullname" placeholder="Fullname" id="" required>
+        </div>
+        <div class="div-form-group">
+            <label for="">Mật Khẩu</label>
+            <input style="box-shadow:0px 0px 15px #D8D8D8;" type="password" class="form-control" ng-model="password" >
+        </div>
+        <div class="div-form-group">
+            <label for="">Email</label>
+            <input style="box-shadow:0px 0px 15px #D8D8D8;" type="email" class="form-control" ng-model="email" placeholder="Email" id="" required>
+        </div>
+        <div class="div-form-group">
+            <label for="">Ngày Sinh</label>
+            <input style="box-shadow:0px 0px 15px #D8D8D8;" type="date" class="form-control" ng-model="birthday" required>
+        </div>
+        <div class="form-group col-md-12">
+            <label for="">giới tính</label>
+            <div class="form-check form-check-inline">
+                <input style="box-shadow:0px 0px 15px #D8D8D8;" type="radio" class="form-check-input" value="true" ng-model="gender" required>
+                <label class="form-check-label">Nam</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input style="box-shadow:0px 0px 15px #D8D8D8;" type="radio" class="form-check-input" value="sai" ng-model="gender" required >
+                <label class="form-check-label">Nữ</label>
+            </div>
+        </div>
+        <div class="div-form-group">
+            <label for="">Học Phí</label>
+            <input style="box-shadow:0px 0px 15px #D8D8D8;" type="text" class="form-control" ng-model="schoolfee" placeholder="Schoolefee" id="" required>
+            <input style="box-shadow:0px 0px 15px #D8D8D8;" type="hidden" ng-model="mark" value="0" id="" required->
+        </div>
+        <button style="margin-top:10px; margin-bottom:10px;" type="submit" class="btn btn-success" ng-click="addStudent()">Submit</button>
+    </form>
+</div>

@@ -1,0 +1,57 @@
+<div class="row" >
+   <div class="col-md-10" style="margin-top:10px;">
+      <div ng-repeat="sub in list_subject" style="float: left; width: 400px; " >
+          <div class="card mb-3" style="max-width: 540px;margin-left: 20px;;box-shadow:0 0 10px #E6E6E6;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="images/{{sub.Logo}}" class="card-img" style="width: 150px; height: 200px;">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">{{sub.Name}}</h5>
+                  <p class="card-text">{{sub.Id}}</p>
+                   <a style="margin-left:5px;" href="#!quiz/{{sub.Id}}/{{sub.Name}}" class="btn btn-outline-success">Thi Luôn</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <aside class="col-sm-2">
+      <div class="card poly-cart">
+
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <i class="fas fa-align-justify"></i> Danh Mục
+        </div>
+        <ul class="list-group list-group-flush">
+          <li ng-repeat="sub in list_subject" class="list-group-item">{{sub.Name}}</li>
+          
+        </ul>
+      </div>
+    </aside>
+    <article>
+      <h1 class="text-center" style="color: rgb(8, 197, 49);margin-top:20px; font-weight: 700;">Thi Trắc Nhiệm</h1>
+      <div class="col-sm-12">
+
+        <div class="row" style="margin-top: 50px; margin-bottom: 10px;">
+
+          <div class="col-sm-6">
+            <p class="text-justify">có tác dụng đánh giá khả năng đáp ứng các câu hỏi được nêu một cách tự phát trong
+              một tình huống cần kiểm tra, cũng thường được sử dụng khi sự tương tác giữa người hỏi và người trả lời
+              để xác định khả năng nhận thức của người trả lời đó</p>
+            <img style="margin-left:110px;" src="images/promoStat.png" alt="">
+          </div>
+          <div class="col-sm-6">
+            <p class="text-justify">Trắc nghiệm khách quan hay tự luận chỉ là hình thức của câu hỏi kiểm tra, đánh giá
+              kết quả học tập của người học. Cùng một nội dung kiến thức có thể kiểm tra bằng câu hỏi trắc nghiệm
+              khách quan hoặc tự luận.</p>
+            <img style="margin-left:110px;" src="images/secondary-consumer-hero-img.png" alt="">
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>

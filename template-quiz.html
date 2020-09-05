@@ -1,0 +1,56 @@
+<div style="height: 400px;" ng-show="!inProgess" class="text-center mb-5">
+    <button onclick="startne()" class="btn btn-success" ng-click="start();">Start quiz</button>
+</div>
+<div class="row">
+    
+</div>
+
+<div  ng-show="inProgess">
+    <div ng-show="quizOver" style="height:200px;"  class="text-center mb-5">
+        <h3>Quiz is Over</h3>
+        <h5 class="text-danger">Điểm : {{score}}</h5>
+        <button class="btn btn-success" ng-click="reset();">Play Again</button>
+    </div>
+    <div ng-show="!quizOver">
+        <div class="col text-center">
+            <i class="fas fa-clock" style="color:green; font-size:30px;"></i>
+            <p style="font-size:30px"><span id="h">Giờ</span> :
+                <span id="m">Phút</span> :
+                <span id="s">Giây</span></p>
+        </div>
+        <div   class="card text-white  mt-5 mb-3">
+            <div class="bg-success card-header">
+                <div class="card-header text-white" style="background-color:green;">
+                    <img src="images/{{sub.Logo}}" style="width:50px;height:50px;" class="border border-primary rounded-lg" alt="">
+                    <span>{{subjectName}}</span>
+                    
+                    <span>Câu: {{id}}/10</span>
+                </div>
+               
+            </div>
+            <div class="card-body text-dark">
+                <div class="card-text">
+                    <label class="font-weight-bold">{{question}}</label>
+                </div>
+                <hr>
+                <div ng-repeat="option in options" class="form-check">
+                    <input class="form-check-input" type="radio" name="answer" value="{{option.Id}}"> 
+                    {{option.Text}}
+                </div>
+            </div>
+            <div class="card-footer bg-white">
+                <div ng-show="answerMode">
+                    <button ng-click="checkAnswer()" class="btn btn-success mr-5">Submit</button>
+                   
+                </div>
+                <div ng-show="!answerMode">
+                    <button ng-click="nextQuestion()" class="btn btn-success">Next</button>
+                    <span class="text-success" ng-show="correctAns">Đúng Rồi!!!</span>
+                    <span class="text-danger" ng-show="!correctAns">Sai Rồi!!!</span>
+                </div>
+                <span class="float-right badge badge-success" style="padding: .28em .7em;">Điểm: {{score}}/10</span>
+            </div>
+        </div>
+    </div>
+    
+</div>

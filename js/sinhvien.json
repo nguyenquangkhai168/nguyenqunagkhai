@@ -1,0 +1,76 @@
+{
+  "sinhvien": [
+    {
+      "username": "teonv",
+      "password": "iloveyou",
+      "fullname": "Nguyễn Văn Tèo",
+      "email": "teonv@fpt.edu.vn",
+      "gender": "true",
+      "birthday": "1995-12-21",
+      "schoolfee": "1500000",
+      "marks": "0",
+      "id": "khai"
+    },
+    {
+      "username": "pheonv",
+      "password": "iloveyou",
+      "fullname": "Nguyễn Văn Chí Phèo",
+      "email": "pheonv@fpt.edu.vn",
+      "gender": "true",
+      "birthday": "1985-10-11",
+      "schoolfee": "2500000",
+      "marks": "0",
+      "id": "mai"
+    },
+    {
+      "username": "nopt",
+      "password": "iloveyou",
+      "fullname": "Phạm Thị Nở",
+      "email": "nopt@fpt.edu.vn",
+      "gender": "false",
+      "birthday": "1993-05-15",
+      "schoolfee": "2000000",
+      "marks": "0",
+      "id": "nhe"
+    },
+    {
+      "username": "khaidao",
+      "password": "123",
+      "email": "khai@gmail.com",
+      "birthday": "2000-01-02T17:00:00.000Z",
+      "gender": "true",
+      "schoolfee": "30000",
+      "id": "PkXZWwZ"
+    },
+    {
+      "username": "khai",
+      "fullname": "khaidaone",
+      "password": "123",
+      "email": "khai@gmail.com",
+      "birthday": "2000-08-15T17:00:00.000Z",
+      "gender": "true",
+      "schoolfee": "300000",
+      "id": "iljGeuK"
+    },
+    {
+      "username": "thien",
+      "fullname": "thien123",
+      "password": "thien123",
+      "email": "hnthien123@gmail.com",
+      "birthday": "2000-08-23T17:00:00.000Z",
+      "gender": "true",
+      "schoolfee": "100000",
+      "id": "tN4cr_-"
+    },
+    {
+      "username": "khai1",
+      "fullname": "nguyenquangkai",
+      "password": "123",
+      "email": "khai@gmail.com",
+      "birthday": "2020-08-10T17:00:00.000Z",
+      "gender": "true",
+      "schoolfee": "100000",
+      "id": "rXOrUln"
+    }
+  ]
+}
